@@ -13,8 +13,8 @@ const Comentarios = (props) => {
   }
 
   const ponerComentarios = () => (
-    props.comentarios.map((comentarios) => (
-      <li>
+    props.comentarios.map((comentarios, index) => (
+      <li key={index}>
         <b>
           <u>
             { comentarios.email }
