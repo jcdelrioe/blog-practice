@@ -1,5 +1,7 @@
 # Blog Practice with React and Redux
 
+https://jcdelrioe-blog-practice.netlify.app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
