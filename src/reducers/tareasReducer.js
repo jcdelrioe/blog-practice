@@ -18,7 +18,7 @@ const INITIAL_STATE = {
   regresar: false
 };
 
-export default (state = INITIAL_STATE, action) => {
+const escoger = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case TRAER_TODAS:
       return {
@@ -55,3 +55,5 @@ export default (state = INITIAL_STATE, action) => {
 		default: return state;
 	};
 };
+
+export default escoger;

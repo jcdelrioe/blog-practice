@@ -60,7 +60,7 @@ export const agregar = (nueva_tarea) => async (dispatch) => {
   })
 
   try{
-    const respuesta = await axios.post('https://jsonplaceholder.typicode.com/todos', nueva_tarea);
+    await axios.post('https://jsonplaceholder.typicode.com/todos', nueva_tarea);
     
     dispatch({
       type: GUARDAR
@@ -80,7 +80,7 @@ export const editar = (tarea_editada) => async (dispatch) => {
   })
 
   try{
-    const respuesta = await axios.put(`https://jsonplaceholder.typicode.com/todos/${tarea_editada.id}`, tarea_editada);
+    await axios.put(`https://jsonplaceholder.typicode.com/todos/${tarea_editada.id}`, tarea_editada);
 
     dispatch({
       type: GUARDAR
@@ -121,7 +121,7 @@ export const eliminar = (tar_id) => async (dispatch) => {
   })
 
   try{
-    const respuesta = await axios.delete(`https://jsonplaceholder.typicode.com/todos/${tar_id}`);
+    await axios.delete(`https://jsonplaceholder.typicode.com/todos/${tar_id}`);
     dispatch({
       type: TRAER_TODAS,
       payload: {}

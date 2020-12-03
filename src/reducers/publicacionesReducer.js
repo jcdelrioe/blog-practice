@@ -15,7 +15,7 @@ const INITIAL_STATE = {
   com_error: false
 };
 
-export default (state = INITIAL_STATE, action) => {
+const escoger = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
     case ACTUALIZAR:
       return {
@@ -43,3 +43,5 @@ export default (state = INITIAL_STATE, action) => {
 		default: return state;
 	};
 };
+
+export default escoger;
